@@ -1,0 +1,17 @@
+SITE
+  remote: https://supermarket.getchef.com/api/v1
+  specs:
+    apt (2.6.1)
+
+GIT
+  remote: git@github.com:jdrago999/test-cookbook
+  ref: develop
+  sha: 86a9c7eb3355d4ebaa19e5dde05423bd51fb0bd7
+  specs:
+    test-cookbook (0.1.0)
+      apt (>= 0.0.0)
+
+DEPENDENCIES
+  apt (>= 0)
+  test-cookbook (>= 0)
+
