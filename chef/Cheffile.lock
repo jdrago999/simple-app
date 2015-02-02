@@ -8,10 +8,10 @@ GIT
   ref: develop
   sha: 86a9c7eb3355d4ebaa19e5dde05423bd51fb0bd7
   specs:
-    test-cookbook (0.1.0)
+    test-app (0.1.0)
       apt (>= 0.0.0)
 
 DEPENDENCIES
   apt (>= 0)
-  test-cookbook (>= 0)
+  test-app (>= 0)
 
