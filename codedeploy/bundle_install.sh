@@ -5,4 +5,4 @@ echo "PWD.........................."
 echo `pwd`
 echo "YAY.........................."
 /usr/local/bin/bundle --deployment
-/usr/local/bin/bundle exec puma -t 0:16 -e staging -d
+BUNDLE_GEMFILE=./Gemfile /usr/local/bin/bundle exec puma -t 0:16 -e staging -d
