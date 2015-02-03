@@ -9,10 +9,10 @@ for pkg in ruby2.0-dev ruby2.0 make autoconf g++ git; do
 done
 
 # Don't install documentation for gems:
-echo 'gem: --no-rdoc --no-ri' >> /etc/gemrc
+#echo 'gem: --no-rdoc --no-ri' >> /etc/gemrc
 
 # Now, we can install the required gems
-for gem in chef ohai librarian-chef io-console berkshelf; do
+for gem in chef ohai librarian-chef io-console; do
   gem2.0 list | grep -q $gem
   if [ $? != 0 ]; then
     gem2.0 install $gem
