@@ -5,4 +5,4 @@ echo "PWD.........................."
 echo `set`
 echo "YAY.........................."
 BUNDLE_GEMFILE=/var/www/simple-app/Gemfile /usr/local/bin/bundle --deployment
-/usr/local/bin/bundle exec puma -t 0:16 -e staging -d
+BUNDLE_GEMFILE=/var/www/simple-app/Gemfile /usr/local/bin/bundle exec puma -t 0:16 -e staging -d
