@@ -12,7 +12,7 @@ module MyService
 
     # Of course:
     get '/' do
-      {hello: :world}.to_json
+      {hello: :world, foo: [:bar, :baz, :bux]}.to_json
     end
   end
 end
