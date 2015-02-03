@@ -4,6 +4,9 @@ files:
   - source: ./
     destination: /var/www/simple-app
 hooks:
+  ApplicationStop:
+    - location: codedeploy/application_stop.sh
+      runas: ubuntu
   BeforeInstall:
     - location: codedeploy/before_install.sh
       runas: root
@@ -14,6 +17,8 @@ hooks:
       runas: root
     - location: codedeploy/bundle_install.sh
       runas: ubuntu
+      # https://xkcd.com/303/
+      timeout: 3000
   ValidateService:
     - location: codedeploy/validate_service.sh
       runas: ubuntu
