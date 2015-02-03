@@ -17,4 +17,3 @@ module MyService
 end
 
 MyService::App.run!
-
