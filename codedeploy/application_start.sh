@@ -9,4 +9,4 @@ cd /var/www/simple-app
 /usr/bin/env chef-solo -c chef/solo.rb -j chef/node.json
 
 chown ubuntu:ubuntu -R /var/www/simple-app
-su ubuntu -c 'cd /var/www/simple-app && bundle install --without test && bundle exec puma -t 0:16 -e staging -d'
+su ubuntu -c 'cd /var/www/simple-app && bundle --deployment && bundle exec puma -t 0:16 -e staging -d'
