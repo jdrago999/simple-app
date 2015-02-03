@@ -6,12 +6,12 @@ SITE
 GIT
   remote: git@github.com:jdrago999/test-cookbook
   ref: develop
-  sha: 86a9c7eb3355d4ebaa19e5dde05423bd51fb0bd7
+  sha: a9019b3cceb318b0a9c3db15548807fff74dda04
   specs:
-    test-app (0.1.0)
+    test-cookbook (0.1.0)
       apt (>= 0.0.0)
 
 DEPENDENCIES
   apt (>= 0)
-  test-app (>= 0)
+  test-cookbook (>= 0)
 

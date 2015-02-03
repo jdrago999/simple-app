@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 gem 'sinatra'
 gem 'activesupport', require: 'active_support'
 gem 'puma'
+gem 'rack'
 
 gem 'dotenv'
 gem 'dotenv-deployment'

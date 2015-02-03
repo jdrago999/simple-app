@@ -1,0 +1,16 @@
+version: 0.0
+os: linux
+files:
+  - source: ./
+    destination: /var/www/test-app
+hooks:
+  BeforeInstall:
+    - location: codedeploy/before_install.sh
+      runas: root
+      timeout: 1800
+  ApplicationStart:
+    - location: codedeploy/application_start.sh
+      runas: root
+  ValidateService:
+    - location: codedeploy/validate_service.sh
+      runas: ubuntu
