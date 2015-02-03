@@ -1,5 +1,5 @@
 #!/bin/bash
-exit
+
 cd /var/www/simple-app/chef
 librarian-chef install
 cd /var/www/simple-app
