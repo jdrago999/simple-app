@@ -12,4 +12,4 @@ cd /var/www/simple-app
 mkdir log
 mkdir -p tmp/pid
 chown ubuntu:ubuntu -R /var/www/simple-app
-su ubuntu -c 'bundle install --without test --deployment && bundle exec puma -t 0:16 -e staging -d'
+su ubuntu -c 'bundle install --without test && bundle exec puma -t 0:16 -e staging -d'
