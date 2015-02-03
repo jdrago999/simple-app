@@ -2,7 +2,7 @@
 
 cd /var/www/simple-app
 echo "PWD.........................."
-echo `pwd`
+echo `set`
 echo "YAY.........................."
-/usr/local/bin/bundle --deployment
-BUNDLE_GEMFILE=./Gemfile /usr/local/bin/bundle exec puma -t 0:16 -e staging -d
+bundle --deployment
+bundle exec puma -t 0:16 -e staging -d
