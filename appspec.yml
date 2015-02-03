@@ -2,12 +2,13 @@ version: 0.0
 os: linux
 files:
   - source: ./
-    destination: /var/www/test-app
+    destination: /var/www/simple-app
 hooks:
   BeforeInstall:
     - location: codedeploy/before_install.sh
       runas: root
-      timeout: 1800
+      # Allow plenty of time to compile all the things.
+      timeout: 6800
   ApplicationStart:
     - location: codedeploy/application_start.sh
       runas: root
