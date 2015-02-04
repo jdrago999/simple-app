@@ -1,6 +1,9 @@
 
-# Vagrant, Chef Solo, Berkshelf, GitHub, Jenkins, AWS CodeDeploy, Ruby
+example-app-sinatra
+===================
 
-## Many moving parts - how they all fit together
+Vagrant, Chef Solo, Berkshelf, GitHub, Jenkins, AWS CodeDeploy, Ruby
+--------------------------------------------------------------------
 
-##
+Many moving parts - but they all fit together
+
