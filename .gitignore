@@ -2,6 +2,6 @@
 .vagrant
 chef/cookbooks
 chef/tmp
-#.bundle/*
-#tmp/log/*
-
+.bundle/*
+tmp/log/*
+coverage/*

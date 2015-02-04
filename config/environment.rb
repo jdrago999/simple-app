@@ -1,12 +1,16 @@
 require "rubygems"
 require "bundler"
 
-# load all the default gems
+# Load all the default gems:
 Bundler.require(:default)
-# load all the environment specific gems
+
+# Load all the environment specific gems:
 Bundler.require(Sinatra::Base.environment)
 
 require "active_support/deprecation"
 require "active_support/all"
 
+# A fake database:
 $db = []
+
+require "./app/todo_api.rb"

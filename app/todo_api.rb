@@ -1,5 +1,5 @@
-
 class TodoApi < Sinatra::Base
+
   get "/" do
     $db.join("\n")
   end
@@ -10,4 +10,5 @@ class TodoApi < Sinatra::Base
     $db << params["todo"]
     200
   end
+
 end

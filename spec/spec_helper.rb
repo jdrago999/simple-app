@@ -1,5 +1,6 @@
 ENV['RACK_ENV'] = 'test'
-
+require 'simplecov'
+SimpleCov.start
 require "./config/environment"
 
 RSpec.configure do |config|
@@ -17,7 +18,7 @@ RSpec.configure do |config|
     mocks.verify_partial_doubles = true
   end
 
-  config.filter_run :focus
+#  config.filter_run :focus
   config.run_all_when_everything_filtered = true
 
   config.disable_monkey_patching!
