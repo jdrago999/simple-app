@@ -11,14 +11,12 @@ hooks:
     - location: codedeploy/before_install.sh
       runas: root
       # Allow plenty of time to compile all the things.
+      # https://xkcd.com/303/
       timeout: 6800
   ApplicationStart:
     - location: codedeploy/application_start.sh
       runas: root
-      # https://xkcd.com/303/
       timeout: 3000
-    # - location: codedeploy/bundle_install.sh
-    #   runas: ubuntu
   ValidateService:
     - location: codedeploy/validate_service.sh
       runas: ubuntu
