@@ -10,7 +10,7 @@ module MyService
       content_type :json
     end
 
-    # Of course, we must:
+    # Of course:
     get '/' do
       {hello: :world, foo: [:bar, :baz, :bux]}.to_json
     end
