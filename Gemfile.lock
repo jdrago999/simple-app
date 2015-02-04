@@ -1,3 +1,12 @@
+GIT
+  remote: https://github.com/indirect/json_spec
+  revision: b5901781b91d4c74834405953307e19e265f62d1
+  ref: patch-1
+  specs:
+    json_spec (1.1.2)
+      multi_json (~> 1.0)
+      rspec (>= 2.0, < 4.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -14,9 +23,6 @@ GEM
     docile (1.1.5)
     i18n (0.6.11)
     json (1.8.1)
-    json_spec (1.1.4)
-      multi_json (~> 1.0)
-      rspec (>= 2.0, < 4.0)
     minitest (5.4.2)
     multi_json (1.10.1)
     rack (1.5.2)
@@ -59,7 +65,7 @@ PLATFORMS
 
 DEPENDENCIES
   activesupport
-  json_spec
+  json_spec!
   rack
   rack-test
   rspec
