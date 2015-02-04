@@ -1,7 +1,3 @@
-#\ -s puma
+require "./config/environment"
 
-require './app'
-
-use Rack::ShowExceptions
-
-run MyService::App.new
+run Rack::URLMap.new("/" => TodoApi)
