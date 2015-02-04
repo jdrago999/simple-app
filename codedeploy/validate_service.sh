@@ -1,6 +1,6 @@
 #!/bin/bash
 
-result=`curl -s http://localhost:4567/`
+result=`curl -s http://localhost:9292/`
 
 if [[ "$result" =~ "hello" ]]; then
     exit 0
