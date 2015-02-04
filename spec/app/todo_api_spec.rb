@@ -6,6 +6,20 @@ RSpec.describe TodoApi do
     TodoApi
   end
 
+  def assert_json_eq(string, data)
+    expect(JSON.parse(string)).to eq JSON.parse(data.to_json)
+  end
+
+  describe 'GET /' do
+    context 'happy' do
+      it 'returns the expected result' do
+        get '/'
+        data = {hello: :world}.to_json
+        expect(last_response.body).to be_json_eql(data)
+      end
+    end
+  end
+
   describe "GET todos" do
     context "no todos" do
       it "returns no todos" do
