@@ -1,10 +1,13 @@
 class TodoApi < Sinatra::Base
 
   get "/" do
-    $db.join("\n")
+    {hello: :world}.to_json
   end
 
-  post "/" do
+  get '/todos' do
+    $db.join("\n")
+  end
+  post '/todo' do
     return 400 unless params["todo"].present?
 
     $db << params["todo"]
