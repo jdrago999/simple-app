@@ -1,6 +1,8 @@
 ENV['RACK_ENV'] = 'test'
 require 'simplecov'
-SimpleCov.start
+SimpleCov.start do
+  add_filter '.vendor/'
+end
 require "./config/environment"
 
 RSpec.configure do |config|
